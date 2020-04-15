@@ -36,7 +36,7 @@ public class App {
         IEatStrategy burgerEatStrategy = new BurgerEatStrategy();
 
 //        Creating the drink strategies
-        IDrinkStrategy coffeDrinkStrategy = new CoffeeDrinkStrategy();
+        IDrinkStrategy coffeeDrinkStrategy = new CoffeeDrinkStrategy();
         IDrinkStrategy teaDrinkStrategy = new TeaDrinkStrategy();
         IDrinkStrategy waterDrinkStrategy = new WaterDrinkStrategy();
 
@@ -48,7 +48,7 @@ public class App {
 
         System.out.println();
 
-        IProgrammer programmer2 = new Programmer("Susan", pythonCodeStrategy, burgerEatStrategy, coffeDrinkStrategy);
+        IProgrammer programmer2 = new Programmer("Susan", pythonCodeStrategy, burgerEatStrategy, coffeeDrinkStrategy);
         programmer2.code();
         programmer2.eat();
         programmer2.drink();
